@@ -1,13 +1,13 @@
 package com.training.javaconfig.bean;
 
 import com.training.javaconfig.config.AppConfig;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Human human1 = context.getBean(Human.class);
         Human human2 = context.getBean(Human.class);
@@ -22,5 +22,6 @@ public class MainApp {
         System.out.println(animal2);
         System.out.println(animal1 == animal2);
 
+        context.close();
     }
 }
