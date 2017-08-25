@@ -1,28 +1,19 @@
 package com.training.javaconfig.bean;
 
-import com.training.javaconfig.config.AppConfig;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 public class MainApp {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Human human1 = context.getBean(Human.class);
-        Human human2 = context.getBean(Human.class);
-        System.out.println(human1);
-        System.out.println(human2);
-        System.out.println(human1 == human2);
+        //TODO load spring container using AnnotationConfigApplicationContext
 
-        System.out.println("=========================");
-        Animal animal1 = context.getBean(Animal.class);
-        Animal animal2 = context.getBean(Animal.class);
-        System.out.println(animal1);
-        System.out.println(animal2);
-        System.out.println(animal1 == animal2);
+        //TODO get bean Human from spring context
 
-        context.close();
+        //TODO get bean Animal from spring context
+
+        //TODO get 2 Human bean and compare
+
+        //TODO get 2 Animal bean and compare
+
     }
 }
