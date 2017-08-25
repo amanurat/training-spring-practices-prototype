@@ -1,6 +1,7 @@
 package example.constructorinjection;
 
 import example.MyService;
+import example.ServiceExample;
 
 public class Client {
 
@@ -15,6 +16,11 @@ public class Client {
 
     // Method within this client that uses the services
     public String greet() {
-        return "Hello " + service.getName();
+        return "Constructor injection , Hello " + service.getName();
+    }
+
+    public static void main(String[] args) {
+        final Client client = new Client(new ServiceExample());
+        System.out.println(client.greet());
     }
 }

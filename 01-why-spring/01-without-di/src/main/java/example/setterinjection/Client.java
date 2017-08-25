@@ -1,6 +1,7 @@
 package example.setterinjection;
 
 import example.MyService;
+import example.ServiceExample;
 
 public class Client {
 
@@ -18,6 +19,15 @@ public class Client {
 
     // Method within this client that uses the services
     public String greet() {
-        return "Hello " + service.getName();
+        return "Setter injection, Hello " + service.getName();
+    }
+
+    public static void main(String[] args) {
+        final Client client = new Client();
+
+        final ServiceExample serviceExample = new ServiceExample();
+        client.setService(serviceExample);
+
+        System.out.println(client.greet());
     }
 }

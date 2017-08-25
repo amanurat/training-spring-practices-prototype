@@ -1,6 +1,7 @@
 package example.noinjection;
 
 import example.MyService;
+import example.ServiceExample;
 
 public class Client {
 
@@ -17,10 +18,11 @@ public class Client {
     public String greet() {
         return "Hello " + service.getName();
     }
-}
 
-class ServiceExample implements MyService {
-    public String getName() {
-        return "Name from ServiceExample";
+
+    public static void main(String[] args) {
+        final Client client = new Client();
+        System.out.println(client.greet());
     }
 }
+
