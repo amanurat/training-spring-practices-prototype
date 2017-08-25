@@ -1,13 +1,8 @@
 package com.training.annotation;
 
-import org.springframework.stereotype.Component;
-
 import javax.swing.*;
 
-/**
- * Created by amanurat on 3/15/2016 AD.
- */
-@Component
+//TODO mark bean conponent
 public class AddressBean {
 
     private String street;

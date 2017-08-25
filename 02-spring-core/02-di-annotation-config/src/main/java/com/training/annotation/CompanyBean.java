@@ -1,15 +1,8 @@
 package com.training.annotation;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-/**
- * Created by amanurat on 3/15/2016 AD.
- */
-@Component
+//TODO mark bean conponent
 public class CompanyBean {
 
-    @Value("${company.name}")
     private String name;
 
     public String getName() {

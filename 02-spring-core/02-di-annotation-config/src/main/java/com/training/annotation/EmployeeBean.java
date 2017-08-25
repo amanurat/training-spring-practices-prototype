@@ -1,26 +1,17 @@
 package com.training.annotation;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-/**
- * Created by amanurat on 3/15/2016 AD.
- */
-
-@Component
+//TODO mark bean component
 public class EmployeeBean {
 
     private String firstName;
-
     private String lastName;
 
-    @Autowired
+    //TODO injection with setter
     private AddressBean addressBean;
-
 
     private CompanyBean companyBean;
 
-    @Autowired
+    //TODO injection with constructor
     public EmployeeBean(CompanyBean companyBean) {
         this.companyBean = companyBean;
     }
