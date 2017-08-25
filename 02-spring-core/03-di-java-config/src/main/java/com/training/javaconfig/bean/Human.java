@@ -1,11 +1,7 @@
 package com.training.javaconfig.bean;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-
-@Scope("prototype")
-@Component
+//TODO mark bean component
+//TODO config scope
 public class Human {
 
     private String name;

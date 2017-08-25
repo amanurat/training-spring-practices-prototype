@@ -2,9 +2,8 @@ package com.training.javaconfig.bean;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
 
-@Component
+//TODO mark bean component
 public class Animal implements InitializingBean, DisposableBean {
     private String name;
 
