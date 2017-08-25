@@ -1,12 +1,8 @@
 package com.training.javaconfig.config;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-
-
-@Configuration
-@ComponentScan(value = "com.training.javaconfig")
-//@ImportResource(locations = "classpath:spring-config.xml")
+//TODO mark this bean is Configuration Bean
+//TODO mark scan component package
+//TODO import resource XML Configuration
 public class AppConfig {
 
 

@@ -7,6 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainApp {
 
     public static void main(String[] args) {
+
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Human human1 = context.getBean(Human.class);
