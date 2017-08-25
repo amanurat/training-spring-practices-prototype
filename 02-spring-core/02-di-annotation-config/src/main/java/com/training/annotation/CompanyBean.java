@@ -1,6 +1,6 @@
 package com.training.annotation;
 
-//TODO mark bean conponent
+//TODO mark bean component
 public class CompanyBean {
 
     private String name;

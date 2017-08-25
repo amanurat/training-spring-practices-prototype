@@ -2,7 +2,7 @@ package com.training.annotation;
 
 import javax.swing.*;
 
-//TODO mark bean conponent
+//TODO mark bean component
 public class AddressBean {
 
     private String street;
