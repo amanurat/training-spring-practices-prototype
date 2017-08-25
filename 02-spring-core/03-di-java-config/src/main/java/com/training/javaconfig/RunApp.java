@@ -1,13 +1,17 @@
 package com.training.javaconfig;
 
-import com.training.javaconfig.config.AppConfig;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 public class RunApp {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
+        //TODO load spring container using AnnotationConfigApplicationContext
+
+        //TODO get bean Human from spring context
+
+        //TODO get bean Animal from spring context
+
+        //TODO get 2 Human bean and compare
+
+        //TODO get 2 Animal bean and compare
     }
 }
