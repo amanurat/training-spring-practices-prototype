@@ -12,9 +12,6 @@ public class EmployeeBean {
     private CompanyBean companyBean;
 
     //TODO injection with constructor
-    public EmployeeBean(CompanyBean companyBean) {
-        this.companyBean = companyBean;
-    }
 
     public AddressBean getAddressBean() {
         return addressBean;
