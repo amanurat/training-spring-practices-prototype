@@ -1,14 +1,11 @@
 package com.training.annotation;
 
-import javax.swing.*;
-
 //TODO mark bean component
 public class AddressBean {
 
     private String street;
     private String district;
-    private Spring province;
-
+    private String province;
 
     public String getDistrict() {
         return district;
@@ -18,11 +15,11 @@ public class AddressBean {
         this.district = district;
     }
 
-    public Spring getProvince() {
+    public String getProvince() {
         return province;
     }
 
-    public void setProvince(Spring province) {
+    public void setProvince(String province) {
         this.province = province;
     }
 
